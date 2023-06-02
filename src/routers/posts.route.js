@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 const {GridFsStorage} = require("multer-gridfs-storage");
-const postController = require("../controllers/posts.controller");
+const postController = require("../controllers/post.controller");
 
 const fileStorage = new GridFsStorage({
     url : process.env.DB_URL+process.env.DB_NAME,
